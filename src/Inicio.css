@@ -1,0 +1,32 @@
+.inicio-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #5a96be;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Inicio from './Inicio';
+import Produccion from './Produccion';
+import RegistroProduccion from './RegistroProduccion';
+import Clientes from './Clientes';
+import DetalleCliente from './DetalleCliente';
+import EditarCliente from './EditarCliente'; // Importa la vista de edición
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Inicio />} />
+                <Route path="/produccion" element={<Produccion />} />
+                <Route path="/registro-produccion" element={<RegistroProduccion />} />
+                <Route path="/clientes" element={<Clientes />} />
+                <Route path="/clientes/:id" element={<DetalleCliente />} />
+                <Route path="/clientes/editar/:id" element={<EditarCliente />} /> {/* Nueva ruta para editar */}
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;

@@ -1,0 +1,42 @@
+.produccion-container {
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo claro */
+    color: #333; /* Color de texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+.vino-list {
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Borde del contenedor de vinos */
+    padding: 10px;
+}
+
+.vino-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre items */
+    display: flex;
+    align-items: center;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.vino-item img {
+    width: 50px; /* Ajusta según tus necesidades */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.create-button {
+    background-color: #63b89e; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    display: block; /* Hace que el botón ocupe su propia línea */
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+    text-align: center;
+}
+
+.create-button:hover {
+    background-color: #225c4f; /* Color del botón al pasar el mouse */
+}
